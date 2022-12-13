@@ -52,7 +52,7 @@ while True:
     mhdc = CreateCompatibleDC(hdc);
     hbit = CreateCompatibleBitmap(hdc, w, h);
     holdbit = SelectObject(mhdc, hbit);
-    if rand(2) == 1:
+    if __import__("random").randrange(2) == 1:
         point = ThreePoint((left + 10, top - 10),(right + 10, top + 10),(left - 10, bottom - 10))
     else:
         point = ThreePoint((left - 10, top + 10),(right - 10, top - 10),(left + 10, bottom + 10))
