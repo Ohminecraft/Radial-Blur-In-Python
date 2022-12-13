@@ -1,7 +1,6 @@
 import ctypes
 from ctypes import *
 from ctypes.wintypes import RECT
-from random import *
 
 # Windll
 Rect = RECT()
@@ -19,7 +18,6 @@ AlphaBlend = windll.msimg32.AlphaBlend
 GetSystemMetrics = windll.user32.GetSystemMetrics
 Sleep = windll.kernel32.Sleep
 #
-rand = randrange
 
 w = GetSystemMetrics(0)
 h = GetSystemMetrics(1)
